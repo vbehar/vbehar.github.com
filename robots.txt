@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: http://vincent.behar.name/sitemap.xml
-

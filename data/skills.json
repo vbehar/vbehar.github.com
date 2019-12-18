@@ -1,0 +1,14 @@
+[
+    {
+        "grouping": "Languages",
+        "skills":   ["French (native)","English (fluent)"]
+    },
+    {
+        "grouping": "Practices",
+        "skills":   ["Continuous Integration","Continuous Delivery","Gitops","Scrum","Kanban"]
+    },
+    {
+        "grouping": "Technologies",
+        "skills":   ["Go","Java","Kubernetes","Helm","Jenkins X","Docker","Postgres","Git","Google Cloud Platform"]
+    }
+]

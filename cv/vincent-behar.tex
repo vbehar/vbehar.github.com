@@ -1,0 +1,136 @@
+% !TEX TS-program = lualatex
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{libertine}
+\usepackage{fontawesome}
+\usepackage{longtable}
+\usepackage[cm]{fullpage}
+
+% headers and footers
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyfoot[L]{Vincent Behar}
+\fancyfoot[C]{}
+\fancyfoot[R]{Page \thepage\ of \pageref*{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}% default is 0pt
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+
+% StackOverflow-like tags
+% https://tex.stackexchange.com/a/311949/142692
+% https://tex.stackexchange.com/questions/387499/how-to-create-a-border-that-looks-like-a-tag
+\usepackage{tikz}
+\definecolor{tagbg}{RGB}{225,236,244}
+\definecolor{tagtxt}{RGB}{88,115,159}
+\newcommand{\sotag}[1]{\tikz[baseline]{\node[anchor=base, rounded corners=0.5ex, text height=1.5ex, text depth=.25ex, fill=tagbg, draw=tagbg, text=tagtxt] {#1};}}
+
+% Helpers for adding job entries
+\newcommand{\job}[2]{\large\sffamily \textbf{#1} at \textbf{#2}}
+\newcommand{\sep}{\multicolumn{2}{c}{}\\}
+
+% tweak the url colors
+\usepackage{hyperref}
+\definecolor{linkcolor}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolor, linkcolor=linkcolor}
+
+% nicer-looking section titles
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{1em}{3pt}
+
+\begin{document}
+
+% --------------------TITLE-------------
+\par{\centering
+		{\Huge \textsc{Vincent Behar}
+	}\bigskip\par}
+
+\hrule
+\vspace{0.5em}
+\begin{tabular}{rl}
+    \textsc{Phone:}     & +33 6 89 85 69 80\\
+    \textsc{Email:}     & \href{mailto:vincent@behar.name}{vincent@behar.name}\\
+    \textsc{Socials:}   & \faHome{} \href{https://vincent.behar.name}{vincent.behar.name} 
+                        | \faTwitter{} \href{https://twitter.com/vbehar}{twitter} 
+                        | \faGithub{} \href{https://github.com/vbehar}{github}
+                        | \faMedium{} \href{https://medium.com/@vbehar}{medium}
+\end{tabular}
+
+\section{Summary}
+\begin{tabular}{p{0.9\textwidth}}
+    Software Engineer with 12+ years of experience using various languages (Go, Java, ...) with a DevOps mindset. Building CI/CD pipelines and tooling to automate delivery using public cloud.\\\\
+    
+    Open-source contributor and speaker/blogger.\\\\
+
+    Interests: \sotag{Go} \sotag{Kubernetes} \sotag{Jenkins X} \sotag{Continuous Delivery} \sotag{Open-source}
+\end{tabular}
+
+\section{Work Experience}
+\begin{longtable}{r|p{0.72\textwidth}}
+  \textsc{Mar 2019--Current} & \job{Principal Engineer / Software Architect}{Dailymotion}, Paris (France) \\
+    &\sotag{Go} \sotag{Jenkins X} \sotag{Kubernetes} \sotag{Google Cloud Platform}\\&\\
+    &Setup a new CI/CD platform on Kubernetes using Jenkins X, and rewrite the applications pipelines. Drive the migration of the ad-tech platform to Kubernetes and Google Cloud Platform. Build custom tooling and ensure we follow best practices. Both internal and external communication on our practices: blog posts, meetups \& conferences talks.\\\sep
+  
+  \textsc{Mar 2017--Mar 2019} & \job{Go Developer}{Dailymotion}, Paris (France) \\(2 years)
+    &\sotag{Go} \sotag{Postgres} \sotag{Docker} \sotag{Jenkins} \sotag{AWS}\\&\\
+    &Development of an ad-tech platform, and mainly the \textit{SSP (Supply-Side Platform)} REST API, in a distributed team - New York and Paris. Setup of the continuous integration.\\\sep
+  
+  \textsc{Jul 2015--Jan 2017} & \job{Go Developer}{AXA}, Paris (France) \\(1 year, 6 months)
+    &\sotag{Go} \sotag{OpenShift} \sotag{Kubernetes} \sotag{Docker}\\&\\
+    &Setup of an OpenShift cluster. Identified as the technical referent for OpenShift (training and support of other developers). Development of tools / tests around the OpenShift API. Contributions to the OpenShift Origin project.\\\sep
+  
+  \textsc{Oct 2013--Jul 2015} & \job{Scala Developer}{AXA}, Paris (France) \\(1 year, 10 months)
+    &\sotag{Scala} \sotag{SBT} \sotag{Docker} \sotag{Elasticsearch} \sotag{ZooKeeper} \sotag{Jenkins}\\&\\
+    &Development of an internal CMS based on the « COPE » (Create Once Publish Everywhere) concept. Setup of the continuous integration, functional and load tests.\\\sep
+  
+  \multicolumn{2}{r}{\footnotesize\itshape (cont. on the next page)}\\\sep
+  \newpage
+  
+  \textsc{Sep 2011--Sep 2013} & \job{Java Developer}{Exalead}, Paris (France) \\(2 years)
+    &\sotag{Java} \sotag{Hadoop} \sotag{HBase} \sotag{MapReduce} \sotag{Cascading} \sotag{ZooKeeper} \sotag{Redis}\\&\\
+    &Development of projects around our web indexed pages, and responsible for the applicative deployments and monitoring of the exalead.com search engine (16 billion of web pages). Transition from internal tools to open-source ones: responsible for the setup and administration of an Hadoop cluster, and development of MapReduce/Cascading jobs.\\\sep
+
+  \textsc{Dec 2009--Aug 2011} & \job{Java/Web Developer}{RTL}, Paris (France) \\(1 year, 9 months)
+    &\sotag{Spring} \sotag{Hibernate} \sotag{Oracle} \sotag{Solr} \sotag{Maven} \sotag{Nexus} \sotag{Jenkins} \sotag{Rundeck} \sotag{Solaris}\\&\\
+    &Development of the Web portals for the radio stations RTL, RTL2, FUN RADIO, and some other thematic websites and back-office (CMS, B2B, ...). Setup of the build process, continuous integration, and automatic deployment (devops).\\\sep
+
+  \textsc{May 2008--Nov 2009} & \job{Java/Swing Developer}{RTL}, Paris (France) \\(1 year, 7 months)
+    &\sotag{Swing} \sotag{Netbeans RCP} \sotag{Spring} \sotag{Hibernate} \sotag{Oracle} \sotag{Maven} \sotag{Nexus} \sotag{Hudson}\\&\\
+    &Development of the new radio broadcast system (servers, clients on touch screens) in a team of 6 developers. Setup of the build process and continuous integration.\\\sep
+
+  \textsc{Sep 2007--Apr 2008} & \job{Java/Web Developer}{RTL}, Paris (France) \\(8 months)
+    &\sotag{Spring} \sotag{Hibernate} \sotag{Oracle} \sotag{Stripes} \sotag{Maven} \sotag{Hudson} \sotag{Tomcat}\\&\\
+    &Developing internal Web applications (events management, trainees management) and a B2B website to sell advertising spots for the radio stations.\\
+\end{longtable}
+
+\section{Publications}
+\begin{tabular}{rl}
+    \textsc{Talks:}&\href{https://vincent.behar.name/publications/2019-12-dwjw-lisbon/}{1 year with Jenkins X} at \textit{DevOps World | Jenkins World Conference} - Dec 2019\\
+    &\href{https://vincent.behar.name/publications/2019-06-openrday/}{Our journey from Jenkins to Jenkins X (in french)} at \textit{Open R\&Day Conference} - Jun 2019\\
+    &\href{https://vincent.behar.name/publications/2019-04-cdconference/}{Our experience running Jenkins X in production} at \textit{Continuous Delivery Virt. Summit} - Apr 2019\\
+    \textsc{Articles:}&\href{https://vincent.behar.name/publications/2019-01-article-from-jenkins-to-jenkins-x/}{Dailymotion's journey from Jenkins to Jenkins X} on \textit{Medium} - Jan 2019\\
+  \multicolumn{2}{r}{\footnotesize\itshape see \href{https://vincent.behar.name/publications}{vincent.behar.name/publications} for the full list of articles and talks.}\\
+\end{tabular}
+
+\section{Skills and Accomplishments}
+\begin{tabular}{rl}
+    \textsc{Languages:}& French (native), English (fluent)\\
+    \textsc{Practices:}& Continuous Integration, Continuous Delivery, Gitops, Scrum, Kanban\\
+    \textsc{Technologies:}& Go, Java, Kubernetes, Helm, Jenkins X, Docker, Postgres, Google Cloud Platform\\
+    \textsc{OSS Projects:}& \href{https://vincent.behar.name/projects/creations/jenkins-rundeck-plugin/}{Jenkins Rundeck plugin}, \href{https://vincent.behar.name/projects/creations/rundeck-api-java-client/}{Rundeck API Java Client}, \href{https://vincent.behar.name/projects/creations/openshift-projects/}{OpenShift-related projects}\\
+    \textsc{OSS Contributions:}& \href{https://jenkins-x.io/}{Jenkins X}, \href{https://github.com/helm/charts}{Helm Charts}, \href{https://github.com/roboll/helmfile}{Helmfile}, \href{https://github.com/deislabs/osiris}{Osiris}, \href{https://github.com/GoogleContainerTools/kaniko}{Kaniko}, \href{https://github.com/openshift/origin}{OpenShift},\\
+    &\href{https://github.com/github-api/github-api}{Java GitHub-API}, \href{https://github.com/sksamuel/elastic4s}{Elastic4s}, \href{https://github.com/cwensel/cascading}{Cascading}, \href{https://github.com/rundeck/rundeck}{Rundeck}, \href{https://commons.apache.org/}{Apache Commons}\\
+    \textsc{Associative activities:}& Co-organizer of the \href{http://parisdevops.fr/}{Paris DevOps} meetup group in 2011-2012.\\
+    &Secretary for a \href{http://jevck.com/}{kayaking group} of around 120 people, between 2003 and 2015.\\
+\end{tabular}
+
+\section{Education}
+\begin{longtable}{r|p{0.72\textwidth}}
+  \textsc{2007} & \job{Master of Science}{Ecole Centrale d'Electronique}, Paris (France) \\
+    &\sotag{Computer Science}\\
+\end{longtable}
+
+\end{document}

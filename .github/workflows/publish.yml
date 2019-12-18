@@ -1,0 +1,40 @@
+name: publish
+
+on:
+  push:
+    branches:
+      - sources
+
+jobs:
+  publish:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.62.0'
+          extended: true
+      - name: Build website with Hugo
+        run: hugo --minify
+
+      - name: Setup Nix
+        uses: cachix/install-nix-action@v6
+      - name: Build CV with lualatex in Nix
+        # need to run it twice to get the `LastPage`
+        run: |
+          nix-shell --command 'lualatex -interaction=nonstopmode vincent-behar.tex; lualatex -interaction=nonstopmode vincent-behar.tex'
+          cp vincent-behar.pdf ../_site/cv/vincent-behar.pdf
+        working-directory: ./cv
+
+      - name: Deploy
+        uses: docker://peaceiris/gh-pages:v2
+        with:
+          emptyCommits: false
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: master
+          PUBLISH_DIR: ./_site

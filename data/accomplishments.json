@@ -1,0 +1,20 @@
+[
+    {
+        "grouping": "Meetups",
+        "skills":   [
+            {"name": "Co-organizer of the Paris DevOps meetup group in 2011-2012", "link": "http://parisdevops.fr/"}
+        ]
+    },
+    {
+        "grouping": "Books",
+        "skills":   [
+            {"name": "Reviewer of the \"Elasticsearch for Hadoop\" book", "link": "https://www.oreilly.com/library/view/elasticsearch-for-hadoop/9781785288999/pr04.html"}
+        ]
+    },
+    {
+        "grouping": "Associative",
+        "skills":   [
+            {"name": "Secretary for a kayaking group of around 120 people, between 2003 and 2015", "link": "http://jevck.com/"}
+        ]
+    }
+]

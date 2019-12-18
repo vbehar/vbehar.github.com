@@ -1,0 +1,75 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Vincent Behar"
+theme = "hugo-resume"
+publishDir = "_site"
+resourceDir = ".cache/resources"
+enableGitInfo = true
+
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+
+[params]
+    firstName = "Vincent"
+    lastName = "Behar"
+    address = "Paris, France"
+    phone = "00 33 6 89 85 69 80"
+    contactNote = "Dev Tools Engineer"
+    profileImage = "img/vbehar.jpg"
+    email = "vincent@behar.name"
+    description = "Software Engineer with 12+ years of experience using various languages (Go, Java, ...) with a DevOps mindset. Building CI/CD pipelines and tooling to automate delivery using public cloud. Open-source contributor and speaker/blogger."
+    favicon = "favicon.ico"
+    # what sections
+    showSkills = true
+    showProjects = true
+    showOpenSource = true
+    showPublications = true
+    showAccomplishments = true
+    showExperience = true
+    showEducation = true
+
+    showBlog = false
+    showQr = false
+
+    # do you want to show git hash on page footer and link to repo? Add commit prefix here.
+    gitCommitPrefix = "https://github.com/vbehar/vbehar.github.com/commit"
+
+[[params.handles]]
+    name = "Download Resume"
+    link = "/cv/vincent-behar.pdf"
+    customIcon = "file-pdf"
+
+[[params.handles]]
+    name = "Twitter"
+    link = "https://twitter.com/vbehar/"
+
+[[params.handles]]
+    name = "GitHub"
+    link = "https://github.com/vbehar/"
+
+[[params.handles]]
+    name = "Medium"
+    link = "https://medium.com/@vbehar"
+
+[[params.handles]]
+    name = "Sourcerer"
+    link = "https://sourcerer.io/vbehar/"
+    brandIcon = "osi"
+
+[[params.handles]]
+    name = "Keybase"
+    link = "https://keybase.io/vbehar"
+
+[[params.handles]]
+    name = "Fork this repo on GitHub"
+    link = "https://github.com/vbehar/vbehar.github.com"
+    customIcon = "code-branch"
+
+[params.google.analytics]
+    trackerID = "UA-23435653-1"
+
+[outputs]
+    home = ["HTML", "JSON"]
+
+[taxonomies]
+    tag = "tags"

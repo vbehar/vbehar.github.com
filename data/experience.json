@@ -1,0 +1,66 @@
+[
+    {
+        "role":     "Principal Engineer / Software Architect",
+        "company":  "Dailymotion",
+        "summary":  "Setup a new CI/CD platform on Kubernetes using Jenkins X, and rewrite the applications pipelines. Drive the migration of the ad-tech platform to Kubernetes and Google Cloud Platform. Build custom tooling and ensure we follow best practices. Both internal and external communication on our practices: blog posts, meetups & conferences talks.",
+        "tags":     ["Go","Jenkins X","Kubernetes","Google Cloud Platform"],
+        "range":    "Since March 2019",
+        "image":    "/img/dailymotion.png"
+    },
+    {
+        "role":     "Go Developer",
+        "company":  "Dailymotion",
+        "summary":  "Development of an ad-tech platform, and mainly the SSP (Supply-Side Platform) REST API, in a distributed team - New York and Paris. Setup of the continuous integration.",
+        "tags":     ["Go","Postgres","Docker","Jenkins","AWS"],
+        "range":    "March 2017 - March 2019",
+        "image":    "/img/dailymotion.png"
+    },
+    {
+        "role":     "Go Developer",
+        "company":  "Axa Group Solutions",
+        "summary":  "Setup of an OpenShift cluster. Identified as the technical referent for OpenShift (training and support of other developers). Development of tools / tests around the OpenShift API. Contributions to the OpenShift Origin project.",
+        "tags":     ["Go","OpenShift","Kubernetes","Docker"],
+        "range":    "July 2015 - January 2017",
+        "image":    "/img/axags.png"
+    },
+    {
+        "role":     "Scala Developer",
+        "company":  "Axa Group Solutions",
+        "summary":  "Development of an internal CMS based on the « COPE » (Create Once Publish Everywhere) concept. Setup of the continuous integration, functional and load tests.",
+        "tags":     ["Scala","SBT","Docker","Elasticsearch","ZooKeeper","Jenkins"],
+        "range":    "October 2013 - July 2015",
+        "image":    "/img/axags.png"
+    },
+    {
+        "role":     "Java Developer",
+        "company":  "Exalead",
+        "summary":  "Development of projects around our web indexed pages, and responsible for the applicative deployments and monitoring of the exalead.com search engine (16 billion of web pages). Transition from internal tools to open-source ones: responsible for the setup and administration of an Hadoop cluster, and development of MapReduce/Cascading jobs.",
+        "tags":     ["Java","Hadoop","HBase","MapReduce","Cascading","Cassandra","Redis","Zookeeper"],
+        "range":    "September 2011 - September 2013",
+        "image":    "/img/exalead.png"
+    },
+    {
+        "role":     "Java/Web Developer",
+        "company":  "RTL",
+        "summary":  "Development of the Web portals for the radio stations RTL, RTL2, FUN RADIO, and some other thematic websites and back-office (CMS, B2B, ...). Setup of the build process, continuous integration, and automatic deployment (devops).",
+        "tags":     ["Spring","Hibernate","Oracle","Solr","Maven","Nexus","Jenkins","Rundeck","Solaris"],
+        "range":    "December 2009 - August 2011",
+        "image":    "/img/rtl.webp"
+    },
+    {
+        "role":     "Java/Swing Developer",
+        "company":  "RTL",
+        "summary":  "Development of the new radio broadcast system (servers, clients on touch screens) in a team of 6 developers. Setup of the build process and continuous integration.",
+        "tags":     ["Swing","Netbeans RCP","Spring","Hibernate","Oracle","Maven","Nexus","Hudson"],
+        "range":    "May 2008 - November 2009",
+        "image":    "/img/rtl.webp"
+    },
+    {
+        "role":     "Java/Web Developer",
+        "company":  "RTL",
+        "summary":  "Developing internal Web applications (events management, trainees management) and a B2B website to sell advertising spots for the radio stations.",
+        "tags":     ["Spring","Hibernate","Oracle","Stripes","Maven","Hudson","Tomcat"],
+        "range":    "September 2007 - April 2008",
+        "image":    "/img/rtl.webp"
+    }
+]
