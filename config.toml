@@ -32,7 +32,7 @@ pygmentsCodeFencesGuessSyntax = true
     showQr = false
 
     # do you want to show git hash on page footer and link to repo? Add commit prefix here.
-    gitCommitPrefix = "https://github.com/vbehar/vbehar.github.com/commit"
+    gitCommitPrefix = "https://github.com/vbehar/vbehar.github.io/commit"
 
 [[params.handles]]
     name = "Download Resume"
@@ -62,7 +62,7 @@ pygmentsCodeFencesGuessSyntax = true
 
 [[params.handles]]
     name = "Fork this repo on GitHub"
-    link = "https://github.com/vbehar/vbehar.github.com"
+    link = "https://github.com/vbehar/vbehar.github.io"
     customIcon = "code-branch"
 
 [params.google.analytics]

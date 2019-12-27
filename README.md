@@ -1,6 +1,6 @@
 # vincent.behar.name
 
-![](https://github.com/vbehar/vbehar.github.com/workflows/publish/badge.svg)
+![](https://github.com/vbehar/vbehar.github.io/workflows/publish/badge.svg)
 
 Sources for the [vincent.behar.name](https://vincent.behar.name/) website:
 - created with [Hugo](https://gohugo.io/)
@@ -19,7 +19,7 @@ See the [cv](cv/README.md) directory for the sources of the PDF version of my re
 
 ## Continuous Delivery
 
-Every push to the `sources` branch will rebuild the whole website and the PDF resume, and write the result in the [master](https://github.com/vbehar/vbehar.github.com/tree/master) branch.
+Every push to the `sources` branch will rebuild the whole website and the PDF resume, and write the result in the [master](https://github.com/vbehar/vbehar.github.io/tree/master) branch.
 
 ### About branches
 
