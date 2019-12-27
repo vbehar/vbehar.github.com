@@ -12,10 +12,10 @@ sitemap:
   priority : 0.8
 ---
 
-At the beginning of 2019, I wrote a blog post on [Dailymotion's Medium publication](https://medium.com/dailymotion) titled **Dailymotion's journey from Jenkins to Jenkins X**.
+At the beginning of 2019, I wrote a blog post on [Dailymotion's Medium publication](https://medium.com/dailymotion) titled **Dailymotion's journey from Jenkins to Jenkins X**:
 
-It got more than 20k views in 1 year.
-
-This story was also re-published on [CloudBees blog](https://www.cloudbees.com/blog/jenkins-to-jenkins-x).
+- it got more than 20k views in 1 year,
+- it was re-published on [CloudBees blog](https://www.cloudbees.com/blog/jenkins-to-jenkins-x),
+- it was translated in chinese by [Wang Donghui](https://github.com/donhui), and published on [InfoQ](https://www.infoq.cn/article/YWkOx7t4gQyO-64KZ186).
 
 You can read [the full blog post](https://medium.com/dailymotion/from-jenkins-to-jenkins-x-604b6cde0ce3) on Medium.
