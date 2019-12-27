@@ -1,6 +1,6 @@
 # vincent.behar.name
 
-![](https://github.com/vbehar/vbehar.github.io/workflows/publish/badge.svg)
+[![](https://github.com/vbehar/vbehar.github.io/workflows/publish/badge.svg)](https://github.com/vbehar/vbehar.github.io/actions?query=workflow%3Apublish)
 
 Sources for the [vincent.behar.name](https://vincent.behar.name/) website:
 - created with [Hugo](https://gohugo.io/)
