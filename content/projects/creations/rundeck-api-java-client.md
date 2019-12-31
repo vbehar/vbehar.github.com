@@ -1,7 +1,7 @@
 ---
 title: "Rundeck API Java Client"
 date: 2011-07-01
-featured: true
+featured: false
 description: "In 2011, following the Jenkins Rundeck plugin, I extracted the code that talked to the Rundeck REST API into its own project: the Rundeck API Java Client."
 tags: ["Rundeck","API","Java"]
 image: "/img/oss-project-rundeck.png"
