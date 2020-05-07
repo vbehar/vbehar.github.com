@@ -2,7 +2,7 @@
 title: "Helm Ecosystem"
 date: 2019-01-01
 featured: true
-description: "I contributed to various open-source projects in the Helm ecosystem: Helmfile, Helm charts, Helm Tiller plugin."
+description: "I contributed to various open-source projects in the Helm ecosystem: Helmfile, Helm charts, Helm plugins."
 tags: ["Kubernetes","Helm","Go"]
 image: "/img/oss-project-helm.png"
 link: "https://helm.sh/"
@@ -15,5 +15,6 @@ sitemap:
 
 I have been contributing to a few open-source projects in the Helm ecosystem:
 - [Helmfile](https://github.com/roboll/helmfile/issues?q=author%3Avbehar) - a "*declarative spec for deploying helm charts*"
+- [Helm Unit Tests plugin](https://github.com/vbehar/helm3-unittest) - a plugin for running unit tests on Helm charts
 - [Helm Tiller plugin](https://github.com/rimusz/helm-tiller/issues?q=author%3Avbehar) - a plugin for running Helm in "tiller-less" mode in Helm 2
 - [Helm charts](https://github.com/helm/charts/issues?q=author%3Avbehar) - various contributions to common charts I've been using

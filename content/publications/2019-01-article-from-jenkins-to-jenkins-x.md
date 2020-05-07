@@ -19,3 +19,5 @@ At the beginning of 2019, I wrote a blog post on [Dailymotion's Medium publicati
 - it was translated in chinese by [Wang Donghui](https://github.com/donhui), and published on [InfoQ](https://www.infoq.cn/article/YWkOx7t4gQyO-64KZ186).
 
 You can read [the full blog post](https://medium.com/dailymotion/from-jenkins-to-jenkins-x-604b6cde0ce3) on Medium.
+
+{{< tweet 1080612773527056385 >}}

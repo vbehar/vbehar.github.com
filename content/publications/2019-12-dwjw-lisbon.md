@@ -24,6 +24,6 @@ I did go through our custom implementation of Jenkins X:
 - the use of [Helmfile](https://github.com/roboll/helmfile) instead of Helm for the staging/prod deployments, to deploy on multiple clusters,
 - the use of [updatebot](https://github.com/jenkins-x/updatebot) to propagate new releases as Pull Requests everywhere, and merge them when needed
 
-Unfortunately this talk was not recorded.
+Unfortunately this talk was not recorded, but you can read the related blog post: [one year with Jenkins X](/publications/2020-03-article-one-year-with-jenkins-x/).
 
 {{< tweet 1202601312111730689 >}}
