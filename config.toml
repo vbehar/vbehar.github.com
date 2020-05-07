@@ -1,13 +1,13 @@
-baseURL = "https://vincent.behar.name/"
-languageCode = "en-us"
 title = "Vincent Behar"
+baseURL = "https://vincent.behar.name/"
 theme = "hugo-resume"
+languageCode = "en-us"
 publishDir = "_site"
 resourceDir = ".cache/resources"
-enableGitInfo = true
-
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
+PygmentsStyle = "monokai"
+enableGitInfo = true
 
 [params]
     firstName = "Vincent"

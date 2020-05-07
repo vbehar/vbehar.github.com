@@ -9,12 +9,12 @@
       <h2 id="{{ urlize .Title }}"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
       <p>{{ .Content }}</p>
       {{ range .Pages }}
-        {{ partial (printf "%s%s" .Section "Summary") . }}
+        {{ partial (printf "%s%s" .Type "Summary") . }}
       {{ end }}
       {{ end }}
     {{ else }}
       {{ range .Data.Pages.ByWeight }}
-        {{ partial (printf "%s%s" .Section "Summary") . }}
+        {{ partial (printf "%s%s" .Type "Summary") . }}
       {{ end }}
     {{ end }}
   </div>
