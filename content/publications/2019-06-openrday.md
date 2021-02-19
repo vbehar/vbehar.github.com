@@ -2,7 +2,7 @@
 title: "Our journey from Jenkins to Jenkins X"
 date: 2019-06-12
 pubtype: "Conference Talk"
-featured: true
+featured: false
 description: "At the Open R&Day Conference, I gave a talk to share our experience migrating Dailymotion's CI/CD pipelines to Kubernetes, using Jenkins X. Introducing Jenkins X, and the benefits we gained by using it and its new practices. Note that this talk is in french."
 tags: ["Talk","Conference","Jenkins X","CI/CD","Dailymotion"]
 image: "/img/2019-06-openrday.jpg"

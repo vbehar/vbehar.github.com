@@ -3,7 +3,7 @@ title: "Various OpenShift-related projects"
 date: 2015-07-01
 featured: true
 description: "In 2015-2016, while using OpenShift, I developed a few open-source projects on top of the Kubernetes/OpenShift APIs: integrations with Git, GitHub, Flowdock, Cucumber, and a dashboard."
-tags: ["OpenShift","Kubernetes","Go"]
+tags: ["OpenShift","Kubernetes","Go","Open Source"]
 image: "/img/oss-project-openshift.png"
 link: "https://github.com/vbehar?tab=repositories&q=openshift&type=source"
 weight: 400

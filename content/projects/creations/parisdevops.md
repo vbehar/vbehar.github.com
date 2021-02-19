@@ -3,7 +3,7 @@ title: "Paris DevOps"
 date: 2011-03-27
 featured: false
 description: "In 2011 I joined the newly created Paris DevOps group, organized meetups and wrote the parisdevops.fr website using Jekyll on GitHub Pages."
-tags: ["DevOps","Website"]
+tags: ["DevOps","Website","Open Source"]
 image: "/img/oss-project-parisdevops.png"
 link: "https://github.com/parisdevops/parisdevops.github.com"
 weight: 1500

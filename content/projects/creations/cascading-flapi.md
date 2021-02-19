@@ -3,7 +3,7 @@ title: "Cascading Flapi"
 date: 2013-05-22
 featured: false
 description: "In 2013, I wrote a wrapper on top of the Cascading project to provide a fluent API."
-tags: ["Cascading","Java"]
+tags: ["Cascading","Java","Open Source"]
 image: "/img/oss-project-cascading.png"
 link: "https://github.com/vbehar/cascading-flapi"
 weight: 1000

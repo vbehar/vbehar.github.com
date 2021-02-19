@@ -3,7 +3,7 @@ title: "Jenkins Rundeck Plugin"
 date: 2011-02-10
 featured: true
 description: "In 2011 I wrote a Jenkins plugin to integrate Rundeck as a publisher, thus enabling Continuous Delivery pipelines using Rundeck to deploy."
-tags: ["Jenkins","Rundeck","Java"]
+tags: ["Jenkins","Rundeck","Java","Open Source"]
 image: "/img/oss-project-jenkins.png"
 link: "https://plugins.jenkins.io/rundeck"
 weight: 500

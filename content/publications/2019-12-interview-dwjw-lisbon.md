@@ -2,7 +2,7 @@
 title: "Interview with Digital Anarchist"
 date: 2019-12-03
 pubtype: "Interview"
-featured: true
+featured: false
 description: "At the DevOps World | Jenkins World 2019 Conference, I was interviewed by Alan Shimel from Digital Anarchist. We talked about DevOps, Continuous Delivery, Jenkins X, and of course the conference."
 tags: ["Interview","Conference","Jenkins X","DevOps","Dailymotion"]
 image: "/img/2019-12-interview-dwjw-lisbon.png"

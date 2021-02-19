@@ -3,7 +3,7 @@ title: "Flowdock to Elasticsearch"
 date: 2014-04-17
 featured: false
 description: "In 2014 I created a small Scala project to import data from Flowdock into Elasticsearch, so that I could play with Kibana dashboards and visualizations."
-tags: ["Scala","Elasticsearch","Kibana","Flowdock"]
+tags: ["Scala","Elasticsearch","Kibana","Flowdock","Open Source"]
 image: "/img/oss-project-elasticsearch.png"
 link: "https://github.com/vbehar/flowdock2es"
 weight: 900

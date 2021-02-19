@@ -52,11 +52,6 @@ enableGitInfo = true
     link = "https://medium.com/@vbehar"
 
 [[params.handles]]
-    name = "Sourcerer"
-    link = "https://sourcerer.io/vbehar/"
-    brandIcon = "osi"
-
-[[params.handles]]
     name = "Keybase"
     link = "https://keybase.io/vbehar"
 
