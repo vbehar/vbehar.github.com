@@ -9,7 +9,7 @@ Forked from [Igal Tabachnik](https://github.com/hmemcpy)'s [cv](https://github.c
 1. Install [Nix](https://nixos.org/nix/):
 
     ```
-    $ curl https://nixos.org/nix/install | sh
+    $ curl -L https://nixos.org/nix/install | sh
     ```
 
 2. Run with `lualatex`:
@@ -17,3 +17,9 @@ Forked from [Igal Tabachnik](https://github.com/hmemcpy)'s [cv](https://github.c
     ```
     $ nix-shell --command 'lualatex -interaction=nonstopmode vincent-behar.tex'
     ```
+
+## Docker setup
+
+```
+$ docker run --rm -it -v $PWD:/ws -w /ws nixos/nix nix-shell --command 'lualatex -interaction=nonstopmode vincent-behar.tex'
+```
