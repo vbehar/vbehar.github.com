@@ -7,9 +7,9 @@ on:
 
 jobs:
   publish:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
         with:
           submodules: true
 
@@ -22,7 +22,7 @@ jobs:
         run: hugo --minify
 
       - name: Setup Nix
-        uses: cachix/install-nix-action@v6
+        uses: cachix/install-nix-action@v12
       - name: Build CV with lualatex in Nix
         # need to run it twice to get the `LastPage`
         run: |
@@ -31,10 +31,9 @@ jobs:
         working-directory: ./cv
 
       - name: Deploy
-        uses: docker://peaceiris/gh-pages:v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          emptyCommits: false
-        env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_BRANCH: master
-          PUBLISH_DIR: ./_site
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: master
+          publish_dir: ./_site
+          cname: vincent.behar.name
